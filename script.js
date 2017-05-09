@@ -9,3 +9,16 @@ function(var i=0; i<31; i++) {
 		console.log(i);
 	}
 }
+
+function isPal(word) {
+	var ogWord = word;
+	if(ogWord === word.split('').reverse().join('')) {
+		console.log('yep');
+	} else {
+		console.log('nope');
+	}
+}
+
+isPal('mom');
+isPal('taco');
+isPal('tacocat');
